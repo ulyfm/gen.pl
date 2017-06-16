@@ -82,6 +82,7 @@ foreach $fp (@projs){
 	$finaltext =~ s/<% title %>/$title/g;
 	$finaltext =~ s/<% date %>/$date/g;
 	$finaltext =~ s/<% text %>/$text/g;
+	$finaltext =~ s/<% link %>/$link/g;
 	my $bpl = "/projects/" . basename($fp) . ".html";
 	$projlinks = $projlinks . "<li><a href='." . $bpl . "'>" . $title . "</a></li>";
 	open FILE, ">", "./docs" . $bpl or die $!;
