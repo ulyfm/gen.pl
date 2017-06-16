@@ -45,7 +45,7 @@ foreach $fi (@blogs){
 	$finaltext =~ s/<% date %>/$date/g;
 	$finaltext =~ s/<% text %>/$text/g;
 	my $bpl = "/blogs/" . basename($fi) . ".html";
-	$bloglinks = $bloglinks . "<li><a href='" . $bpl . "'>" . $title . "</a></li>";
+	$bloglinks = $bloglinks . "<li><a href='." . $bpl . "'>" . $title . "</a></li>";
 	open FILE, ">", "./docs" . $bpl or die $!;
 	print FILE $finaltext;
 	close FILE;
@@ -83,7 +83,7 @@ foreach $fp (@projs){
 	$finaltext =~ s/<% date %>/$date/g;
 	$finaltext =~ s/<% text %>/$text/g;
 	my $bpl = "/projects/" . basename($fp) . ".html";
-	$projlinks = $projlinks . "<li><a href='" . $bpl . "'>" . $title . "</a></li>";
+	$projlinks = $projlinks . "<li><a href='." . $bpl . "'>" . $title . "</a></li>";
 	open FILE, ">", "./docs" . $bpl or die $!;
 	print FILE $finaltext;
 	close FILE;
