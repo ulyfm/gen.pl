@@ -1,0 +1,30 @@
+body {
+	font-family: 'EB Garamond';
+	background-color: #DFCBAB;
+	width: 70%;
+	margin-left: 2%;
+	min-width: 20em;
+}
+.title {
+	color: #A5352C;
+	margin-bottom: 0px;
+}
+h2 {
+	font-size: 20px;
+}
+p {
+	text-indent: 25px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+a , a:visited, a:active {
+	color: #2E4F73;
+	text-decoration: none;
+	border-bottom: 1px #2E4F73 dotted;
+}
+.ddetail {
+	color: #D4BC99;
+}
+.ldetail {
+	color: #EEDCC9;
+}
